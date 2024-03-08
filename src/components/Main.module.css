@@ -1,0 +1,131 @@
+#container{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    /* border: 3px solid red;  */
+    position: relative  ;
+    top: 25vh;
+    margin: 0 10%;
+    object-position: 10%;
+    z-index: 0;
+    
+}
+
+#container #conteudo{
+    text-shadow: black 5px 10px 7px;
+    /* border: 3px solid blue; */
+    width: 50%;
+   
+}
+
+#container #conteudo h1{
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+
+}
+#container #conteudo h1 span{
+    color: rgb(105, 238, 165);
+    font-size: inherit;
+}
+
+#container #conteudo p{
+    color: #fff;
+    font-size: 1.7em;
+}
+
+
+#container form {
+    /* border: 3px solid green; */
+}
+
+#container form #formu{
+    /* border: 3px solid yellow; */
+    text-align: center;
+    
+}
+
+#container form{
+    /* border: 3px solid green; */
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+#container  form input{
+    background-color: #cacaca48;
+    border: 2px solid #7a7a7a62;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#container  form select{
+    background-color: #cacaca48;
+    border: 2px solid #7a7a7a62;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0;
+}
+#container  form h4{
+    color: #161616;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+}
+
+#container form button{
+    background-color: #d35e10;
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    height: 50px;
+    color: #fff;
+   margin-top: 20px;
+}
+
+@media (max-width: 920px){
+   #container{
+    display: block;
+    margin: 0;
+    padding: 0;
+   }
+
+   #container #conteudo{
+    width: 100%;
+   }
+
+   #container form{
+    width: 100%;
+    padding: 0;
+   }
+}
+
+@media (max-width: 500px){
+    #container #conteudo h1{
+        font-size: 2em;
+    }
+
+    #container #conteudo p{
+        font-size: 1em;
+    }
+
+    #container form{
+        width: 100%;
+    }
+
+    #container{
+        
+    }
+    
+}

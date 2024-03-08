@@ -1,13 +1,21 @@
 body {
-  margin: 0;
+  background-color: black;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.952),transparent, transparent,transparent), url('/imagens/solar-background.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100vh;
+  margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 2000px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  max-height: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 1600){
+
 }

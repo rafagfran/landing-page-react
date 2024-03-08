@@ -1,0 +1,115 @@
+header{
+    padding: 10px;
+    /* border: 3px solid red;   */
+    background-color: rgb(6, 15, 54);
+    box-shadow: #131313 0 1px 50px ;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+header #container{
+     /* border: 3px solid blue;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    height: 60px;
+}
+
+ header #container #logo{
+     /* border: 3px solid green;  */
+     display: flex;
+     align-items: center;
+}
+
+header #container #logo a{
+    text-decoration: none;
+}
+
+header #container #logo h1{
+    color: #f05811;
+    text-decoration: none;
+    font-size: 3em;
+    
+    text-shadow: rgb(56, 22, 2) 0px 5px 5px
+}
+
+#nav_container {
+    padding: 0px 10px;
+    width: 100%;
+    /* border: 3px solid green;    */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#nav_container nav{
+    /* border: 3px solid rgb(11, 149, 204); */
+    padding: 5px;
+    text-decoration: none;
+    display: flex; /* Adicione display flex para o nav */
+    align-items: center;
+}
+
+#nav_container nav ul{
+    /* border: 3px solid brown; */
+    display: flex;
+    padding: 5px;
+    list-style: none;
+    gap: 30px; 
+}
+
+/* nav ul li{
+    border: 3px solid green;
+} */
+
+#nav_container  nav ul li a{
+    font-size: 1.3em;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+#nav_container  #header_actions{
+    margin-left: 10%;
+    border: none;
+    background-color: #d35e10;
+    border-radius: 5px;
+    max-width: 200px;
+    max-height: 100px;
+    width: 30%;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: #131313 0px 5px 15px 2px;
+    overflow: hidden;
+}
+
+#nav_container #header_actions a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+@media (max-width: 1080px){
+    #nav_container{
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 500px){
+    header #container #logo h1{
+        font-size: 2em;
+        
+    }
+}
+
+@media(max-width: 300px){
+    header #container{
+        display: block;
+        height: 150px;
+    }
+}
