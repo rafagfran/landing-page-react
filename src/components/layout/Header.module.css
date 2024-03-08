@@ -29,11 +29,17 @@ header #container #logo a{
 }
 
 header #container #logo h1{
-    color: #f05811;
+    color: #ffffffc2;
     text-decoration: none;
     font-size: 3em;
-    
-    text-shadow: rgb(56, 22, 2) 0px 5px 5px
+}
+
+#container #logo span{
+    color: #daa209;
+    background: -webkit-linear-gradient(rgba(230, 208, 10, 0.918), rgb(221, 183, 14), rgb(235, 95, 14), rgb(245, 91, 3)); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.9em;
 }
 
 #nav_container {

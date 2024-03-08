@@ -1,4 +1,4 @@
-import styles from './Main.module.css'
+import styles from './PriceSimulation.module.css'
 
 const Main = () => {
     return(

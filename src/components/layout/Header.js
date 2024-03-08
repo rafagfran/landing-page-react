@@ -7,7 +7,8 @@ const Header = () => {
                 <div id={styles.container}>
                     <div id={styles.logo}>
                         <a href="/" title="home page">
-                            <h1>FOTOVOLTS</h1>
+                            <h1>MW<span>SOLAR</span></h1>
+                            
                         </a>
                     </div>{/*end logo */}
                     <div id={styles.nav_container}>
