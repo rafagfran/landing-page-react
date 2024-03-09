@@ -1,0 +1,36 @@
+.economy_simulator{
+    border: 3px solid #ebebeb;
+    padding: 10px;
+    position: relative;
+    top: 200px;     
+}
+
+
+.container{
+    border: 3px solid #e9e1e1;
+    display: flex;
+}
+
+.graphic {
+    border: 3px solid #e9e1e1;
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+}
+
+.userInputs{
+    border: 3px solid #e9e1e1;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.userInputs div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
