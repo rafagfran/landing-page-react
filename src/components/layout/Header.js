@@ -2,7 +2,6 @@ import styles from './Header.module.css'
 
 const Header = () => {
     return(
-        <>
             <header>
                 <div id={styles.container}>
                     <div id={styles.logo}>
@@ -20,12 +19,11 @@ const Header = () => {
                             </ul>  
                         </nav>
                         <div id={styles.header_actions}>
-                            <a href="/orcamento" id={styles.btn_orcamento}>Simular Orçamento</a>
+                            <a href="/orcamento" id={styles.btn_orcamento}>Fazer Orçamento</a>
                         </div>{/*end header-actions*/}
                     </div> {/*end container */}
                 </div>
             </header>
-        </>
     )
 }
 

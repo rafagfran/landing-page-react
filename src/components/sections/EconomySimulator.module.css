@@ -1,31 +1,34 @@
 .economy_simulator{
-    border: 3px solid #ebebeb;
     padding: 10px;
     position: relative;
-    top: 200px;     
+    top: 45vh;
+    /* border: 1px solid red; */
+    margin: 0 10%;
 }
 
-
 .container{
-    border: 3px solid #e9e1e1;
+    /* border: 3px solid green; */
     display: flex;
+    gap: 50px;
 }
 
 .graphic {
-    border: 3px solid #e9e1e1;
     padding: 10px;
     margin: 10px;
     width: 70%;
+    /* background-color: rgb(6, 15, 54); */
 }
 
 .userInputs{
-    border: 3px solid #e9e1e1;
+    /* border: 3px solid #e9e1e1; */
+    background-color: rgb(6, 15, 54);
     padding: 10px;
     margin: 10px;
     width: 30%;
     display: flex;
     flex-direction: column;
     color: #fff;
+    border-radius: 10px;
 }
 
 .userInputs div{
@@ -33,4 +36,23 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.userInputs span{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.userInputs button{
+    width: 25%;
+    height: 40px;
+    margin-left: 38%;
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    font: 1em;
+    font-weight: bold;
 }

@@ -2,7 +2,7 @@ import styles from './PriceSimulation.module.css'
 
 const Main = () => {
     return(
-        <>
+        <section>
             <div id={styles.container}>
                 <div id={styles.conteudo}>
                     <h1><span>ECO<br/></span>TECH SOLAR PANELS</h1>
@@ -10,7 +10,7 @@ const Main = () => {
                 </div>
                 <form>
                     <div id={styles.formu}>
-                        <h4>RECEBA UMA MÉDIA DE COTAÇÃO PARA INSTLAÇÃO DE PAINEL SOLAR RESIDENCIAL OU EMPRESARIAL</h4>
+                        <h4>RECEBA UMA COTAÇÃO MÉDIA PERSONALIZADA</h4>
                         <div>
                             <label for="nome">Nome</label>
                             <input id={styles.nome} title="Nome"></input>
@@ -34,7 +34,7 @@ const Main = () => {
                     <button>Enviar</button>
                 </form>
             </div>
-        </>
+        </section>
     )
 }
 

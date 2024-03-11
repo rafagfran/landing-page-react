@@ -1,38 +1,49 @@
 import style from './EconomySimulator.module.css';
-import React, { useState } from 'react';
-import { Chart } from 'react-google-charts';
+import { ComposedChart,Line,Area,Bar,XAxis,YAxis,CartesianGrid,Tooltip,Legend,ResponsiveContainer } from 'recharts';
 
+const gastoAtual = 80000;
+const gastoSolar = 55555;
+
+const data = [ 
+    {name: "Uso atual", Gasto: gastoAtual},
+    {name: "Uso energia solar", Gasto: gastoSolar}
+]
 
 const EconomySimulator = () => {
-    const [options, setOptions] = useState({
-        title: 'grafico de barra'
-    });
-    const [data, setData] = useState([
-        ['Gastos', 'valores'],
-        ['Gasto Atual', 5000],
-        ['Gasto placa solar', 3000],
-    ]);
-    return (
-        <section className={style.economy_simulator}>
-            <div className={style.container}>
-                <div className={style.graphic}>
-                    <Chart 
-                        width={'100%'}
-                        height={'100%'}
-                        chartType='ColumnChart'
-                        data={data}
-                        options={options}
-                    />
-                </div>
 
+    return (
+        <section className={style.economy_simulator}>        
+            <div className={style.container}>
+                {/* Construção do grafico */}
+                <div className={style.graphic}>
+                    <ResponsiveContainer width="100%" height="90%">
+                            <ComposedChart
+
+                            data={data}
+                            margin={{
+                                top: 20
+                            }}
+                            >
+                            
+                            <XAxis dataKey="name" scale="auto" stroke="#fff" />
+                            <YAxis stroke="#fff"/>
+                            <Tooltip />
+                            <Bar dataKey="Gasto" barSize={50} fill="#d35e10" />
+                            <Line type='linearClosed'dataKey="Gasto" stroke="#fff"/>
+                        </ComposedChart>
+                    </ResponsiveContainer>        
+               </div> {/* Graphic */}
+
+                {/* Entradas de usuário */}
                 <div className={style.userInputs}>
+                    <span>Simular economia</span>
                     <div>
                         <label for="consumoAtual">Consumo atual</label>
                         <input id={style.consumoAtual} title="Consumo atual"></input>
                     </div>
                     <div>
-                        <label for="localGeo">Localização graografica</label>
-                        <input id={style.localGeo} title="Localização graografica"></input>
+                        <label for="localGeo">Localização geografica</label>
+                        <input id={style.localGeo} title="Localização geografica"></input>
                     </div>
                     <div>
                         <label for="modeloPlaca">Modelo da placa</label>
@@ -42,7 +53,8 @@ const EconomySimulator = () => {
                         <label for="valorAtual">Valor atual da energia</label>
                         <input id={style.valorAtual} title="Valor atual da energia"></input>
                     </div>
-                </div>
+                    <button>Simular</button>
+                </div> {/* UserInputs */}
             </div>
         </section>
     )
