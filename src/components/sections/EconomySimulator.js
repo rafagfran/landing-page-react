@@ -28,8 +28,8 @@ const EconomySimulator = () => {
                             <XAxis dataKey="name" scale="auto" stroke="#fff" />
                             <YAxis stroke="#fff"/>
                             <Tooltip />
-                            <Bar dataKey="Gasto" barSize={50} fill="#d35e10" />
-                            <Line type='linearClosed'dataKey="Gasto" stroke="#fff"/>
+                            <Bar dataKey="Gasto" barSize={50} fill="yellow" />
+                            <Line type='linearClosed'dataKey="Gasto" stroke="white"/>
                         </ComposedChart>
                     </ResponsiveContainer>        
                </div> {/* Graphic */}

@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.952),transparent, transparent,transparent), url('/imagens/solar-background.jpg');
   background-repeat: no-repeat;
   background-position: top;
@@ -14,8 +14,4 @@ body {
 *{
   max-height: 100%;
   font-size: 16px;
-}
-
-@media (max-width: 1600){
-
 }
