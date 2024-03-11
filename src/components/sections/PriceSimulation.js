@@ -2,7 +2,7 @@ import styles from './PriceSimulation.module.css'
 
 const Main = () => {
     return(
-        <section>
+        <footer className={styles.priceSimulation}>
             <div id={styles.container}>
                 <div id={styles.conteudo}>
                     <h1><span>ECO<br/></span>TECH SOLAR PANELS</h1>
@@ -34,7 +34,7 @@ const Main = () => {
                     <button>Enviar</button>
                 </form>
             </div>
-        </section>
+        </footer>
     )
 }
 
